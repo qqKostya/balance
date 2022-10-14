@@ -1,0 +1,381 @@
+@font-face {
+    font-family: "MuseoSansCyrl";
+    src: url("./fonts/") format("woff2"),
+      url("./fonts/MuseoSansCyrl-500.woff") format("woff"),
+      url("./fonts/MuseoSansCyrl-500.ttf") format("ttf"),
+      url("./fonts/MuseoSansCyrl500.eot") format("eot");
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "MuseoSansCyrl";
+    color: #242424;
+    background-color: #f5f5f5;
+    /* min-width: 114rem; */
+}
+
+.the-one {
+    margin: 0 auto;
+    width: 128rem;
+    height: 39.2rem;
+    background-color: #F0F0F0;
+}
+
+.wrapper {
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 5.7rem 7rem 9.3rem;
+}
+
+@media (max-width:114rem) {
+    .wrapper {
+        max-width: 97rem;
+    }
+}
+
+@media (max-width:76.7rem) {
+    .wrapper {
+        max-width: none;
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.balance {
+    width: 25.5rem;
+    height: 24.2rem;
+    margin-right: 8.3rem;
+    
+    
+    background-color: rgba(106, 106, 106, 0.08);
+}
+
+.balance__title {
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.3rem;
+    margin-left: 3.6rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.balance__value {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-left: 3.6rem;
+}
+
+.balance__value-coin {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.65rem;
+}
+
+.balance__value-num {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.2rem;
+    line-height: 4.3rem;
+    margin-right: 0.9rem;
+}
+
+.balance__value-currency {
+    width: 4.6rem;
+    height: 3.8rem;
+}
+
+.discount {
+    width: 81.5rem;
+    height: 24.2rem;
+    background-color: rgba(106, 106, 106, 0.08);
+}
+
+.discount__header {
+    margin: 1.6rem 2rem 4.1rem 2.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount__header + a {
+    color: #242424;
+}
+
+.discount__title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.3rem;
+}
+
+.discount__link {
+    color: #242424;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+}
+
+.discount__body {
+    margin-left: 5.8rem;
+    margin-right: 5.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sales__title {
+    display: flex;
+    margin-bottom: 1.2rem;
+}
+
+.sales__title-coin {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.3rem;
+}
+
+.coin {
+    width: 100%;
+    height: 100%;
+}
+
+.sales__titile-num {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.3rem;
+    margin-right: 0.3rem;
+}
+
+.sales__title-currency {
+    width: 1.5rem;
+    height: 1.3rem;
+}
+
+.et {
+    width: 100%;
+    height: 100%;
+}
+
+.sales__icon {
+    position: relative;
+   display: inline-block;
+   margin-bottom: 0.9rem;
+}
+
+.sales__icon img {
+   height: 3.8rem;
+   width: 3.8rem;
+}
+
+.sales__icon p {
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 28px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+.sales__percent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.9rem;
+}
+
+.sales__percent-img {
+    width: 4rem;
+    height: 2.5rem;
+    margin-right: 0.4rem;
+}
+
+.sales__percent-text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+}
+
+.sales__btn a {
+    display:block;
+    width:13.5rem;
+    margin:auto;
+    padding: 0.5rem 1.2rem;
+    background-color:#FECE00;
+    color:#fff!important;
+    text-decoration:none;
+    font-size:1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+
+    transition: background-color .2s linear;
+  }
+  
+.sales__btn a:hover {
+    color:#fff!important;
+    text-decoration:none!important;
+    background-color: darken(#FECE00, 5%);
+  }
+
+.active a {
+    background:#00CD52;
+}
+
+.active a:hover {
+    color:#fff!important;
+    text-decoration:none!important;
+    background-color: darken(#00CD52, 5%);
+  }
+
+
+
+.sales__icon-add {
+    position: relative;
+   display: inline-block;
+}
+
+.sales__icon-add p {
+    right: 0;
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    left: 5px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+    color: #FFFFFF;
+    transform: rotate(-12.65deg);
+}
+
+/* Modal window */
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ 
+ 
+ .modal {
+    
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    width: 100%;
+    max-width: 500px;
+    
+   
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+ }
+ 
+
+.overlay {
+   
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ 
+ .modal {
+    
+    
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    
+    width: 100%;
+    max-width: 500px;
+    
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; 
+    
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+ }
+ 
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ 
+ 
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+}
+
+.modal__title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 130%;
+    text-align: left;
+    margin-bottom: 2.2rem;
+}
+
+.modal__text {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 130%;
+    text-align: justify;
+    margin-bottom: 4.5rem;
+}

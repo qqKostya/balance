@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/vender/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>English Tochka</title>
+</head>
+
+<body>
+    <main>
+
+        <!-- Start section The one -->
+        <section class="the-one">
+            <div class="wrapper">
+                <div class="info">
+
+                    <!-- Start block balance -->
+                    <div class="balance">
+                        <p class="balance__title">Ваш баланс:</p>
+                        <div class="balance__value">
+                            <div class="balance__value-coin">
+                                <img src="./assets/images/coin.png" alt="coin">
+                            </div>
+                            <div class="balance__value-num">
+                                <p>34</p>
+                            </div>
+                            <div class="balance__value-currency">
+                                <img src="./assets/images/et.svg" alt="currency">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End block balance -->
+
+                    <!-- Start block discount -->
+                    <div class="discount">
+                        <div class="discount__header">
+                            <h2 class="discount__title">Варианты обмена на скидку</h2>
+                            <a class="discount__link js-open-modal" href="#" data-modal="1">Инструкция</a>
+                        </div>
+                        <div class="discount__body">
+                            <div class="discount__body-sales sales">
+                                <div class="sales__title">
+                                    <div class="sales__title-coin">
+                                        <img class="coin" src="./assets/images/coin.png" alt="coin">
+                                    </div>
+                                    <div class="sales__titile-num">
+                                        <p>50</p>
+                                    </div>
+                                    <div class="sales__title-currency">
+                                        <img class="et" src="./assets/images/et.svg" alt="currency">
+                                    </div>
+                                </div>
+                                <div class="sales__icon">
+                                    <p class="sales__icon-text">x2</p>
+                                    <img src="./assets/images/phone.svg" alt="icon" class="sales__icon-img">
+                                </div>
+                                <div class="sales__percent">
+                                    <img src="./assets/images/sales.png" alt="sales" class="sales__percent-img">
+                                    <p class="sales__percent-text">на звонки ST (x2)</p>
+                                </div>
+                                <div class="sales__btn active">
+                                    <a href="#">Уже<br> использовано</a>
+                                </div>
+                            </div>
+                            <div class="discount__body-sales sales">
+                                <div class="sales__title">
+                                    <div class="sales__title-coin">
+                                        <img class="coin" src="./assets/images/coin.png" alt="coin">
+                                    </div>
+                                    <div class="sales__titile-num">
+                                        <p>70</p>
+                                    </div>
+                                    <div class="sales__title-currency">
+                                        <img class="et" src="./assets/images/et.svg" alt="currency">
+                                    </div>
+                                </div>
+                                <div class="sales__icon">
+                                    <img src="./assets/images//book.svg" alt="icon" class="sales__icon-img">
+                                </div>
+                                <div class="sales__percent">
+                                    <img src="./assets/images/sale30.png" alt="sales" class="sales__percent-img">
+                                    <p class="sales__percent-text">на спецкурс</p>
+                                </div>
+                                <div class="sales__btn">
+                                    <a href="#">Использовать скидку</a>
+                                </div>
+                            </div>
+                            <div class="discount__body-sales sales">
+                                <div class="sales__title">
+                                    <div class="sales__title-coin">
+                                        <img class="coin" src="./assets/images/coin.png" alt="coin">
+                                    </div>
+                                    <div class="sales__titile-num">
+                                        <p>100</p>
+                                    </div>
+                                    <div class="sales__title-currency">
+                                        <img class="et" src="./assets/images/et.svg" alt="currency">
+                                    </div>
+                                </div>
+                                <div class="sales__icon">
+                                    <img src="./assets/images/books.svg" alt="icon" class="sales__icon-img">
+                                </div>
+                                <div class="sales__percent">
+                                    <img src="./assets/images/sales.png" alt="sales" class="sales__percent-img">
+                                    <p class="sales__percent-text">на курс</p>
+                                </div>
+                                <div class="sales__btn">
+                                    <a href="#">Использовать скидку</a>
+                                </div>
+                            </div>
+                            <div class="discount__body-sales sales">
+                                <div class="sales__title">
+                                    <div class="sales__title-coin">
+                                        <img class="coin" src="./assets/images/coin.png" alt="coin">
+                                    </div>
+                                    <div class="sales__titile-num">
+                                        <p>139</p>
+                                    </div>
+                                    <div class="sales__title-currency">
+                                        <img class="et" src="./assets/images/et.svg" alt="currency">
+                                    </div>
+                                </div>
+                                <div class="sales__icon">
+                                    <img src="./assets/images/books.svg" alt="icon" class="sales__icon-img">
+                                </div>
+                                <div class="sales__percent">
+                                    <div class="sales__icon-add">
+                                        <p>65%</p>
+                                        <img src="./assets/images/sale-65.png" alt="sales" class="sales__percent-img">
+                                    </div>
+                                    <p class="sales__percent-text">на курс</p>
+                                </div>
+                                <div class="sales__btn">
+                                    <a href="#">Использовать скидку</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End block discount -->
+                </div>
+
+            </div>
+        </section>
+        <!-- End section The one -->
+    </main>
+    <div class="modal" data-modal="1">
+        <!--   Svg иконка для закрытия окна  -->
+        <img class="modal__cross js-modal-close" src="./assets/images/modal-close.svg" alt="close">
+        <p class="modal__title">Инструкция</p>
+        <p class="modal__text">
+            После публикации сделайте скрин, что вы его написали и отправьте своему куратору, чтобы мы добавили вам
+            спецкурс в личный кабинет.
+        </p>
+        <p class="modal__text">
+            После публикации сделайте скрин, что вы его написали и отправьте своему куратору, чтобы мы добавили вам
+            спецкурс в личный кабинет.
+        </p>
+        <p class="modal__text">
+            После публикации сделайте скрин, что вы его написали и отправьте своему куратору, чтобы мы добавили вам
+            спецкурс в личный кабинет.
+        </p>
+        <p class="modal__text">
+            После публикации сделайте скрин, что вы его написали и отправьте своему куратору, чтобы мы добавили вам
+            спецкурс в личный кабинет.
+        </p>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
