@@ -14,7 +14,8 @@ body {
     font-family: "MuseoSansCyrl";
     color: #242424;
     background-color: #f5f5f5;
-    /* min-width: 114rem; */
+    /* box-sizing: border-box; */
+    height: 100vh;
 }
 
 .the-one {
@@ -25,21 +26,9 @@ body {
 }
 
 .wrapper {
-    max-width: 114rem;
+    min-width: 114rem;
     margin: 0 auto;
     padding: 5.7rem 7rem 9.3rem;
-}
-
-@media (max-width:114rem) {
-    .wrapper {
-        max-width: 97rem;
-    }
-}
-
-@media (max-width:76.7rem) {
-    .wrapper {
-        max-width: none;
-    }
 }
 
 .info {
@@ -51,7 +40,7 @@ body {
 .balance {
     width: 25.5rem;
     height: 24.2rem;
-    margin-right: 8.3rem;
+    /* margin-right: 8.3rem; */
     
     
     background-color: rgba(106, 106, 106, 0.08);
@@ -127,8 +116,10 @@ body {
 .discount__body {
     margin-left: 5.8rem;
     margin-right: 5.8rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    justify-content: space-between;
 }
 
 .sales {
@@ -379,3 +370,41 @@ body {
     text-align: justify;
     margin-bottom: 4.5rem;
 }
+
+
+
+/* Start media */
+@media (max-width: 85rem) {
+    .the-one {
+        height: auto;
+        text-align: centerж
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .balance {
+        margin-bottom: 3rem;
+    }
+
+    .discount {
+        width: auto;
+        height: auto;
+    }
+
+    .discount__body {
+        flex-direction: column;
+    }
+
+    .discount__body-sales {
+        margin-bottom: 3rem;
+    }
+
+    .discount__header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* End media */
